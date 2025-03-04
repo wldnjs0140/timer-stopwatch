@@ -51,7 +51,7 @@ export default {
   name: "App",
   data() {
     return {
-      timerInput: "", // 사용자가 입력한 초기 시간
+      timerInput: 10, // 사용자가 입력한 초기 시간
       timerTime: 0, // 실제 타이머 카운트다운 시간
       timerRunning: false,
       timerId: null,
