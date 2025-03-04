@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <h1>타이머: {{ timerDisplay }}초 | 스톱워치: {{ stopwatchDisplay }}</h1>
+    <h1>타이머: {{ timerDisplay }}초</h1>
     <div class="timer-input">
       <input
         type="number"
@@ -18,6 +18,11 @@
       </button>
       <button @click="resetTimer" :disabled="timerRunning">초기화</button>
     </div>
+    <br /><br />
+    <hr />
+    <br /><br />
+    <h1>스톱워치: {{ stopwatchDisplay }}</h1>
+
     <div class="controls">
       <button @click="startStopwatch" :disabled="stopwatchRunning">
         스톱워치 시작
